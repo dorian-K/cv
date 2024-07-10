@@ -1,0 +1,30 @@
+# LaTeX intermediate files
+*.aux
+*.log
+*.toc
+*.lot
+*.lof
+*.out
+*.fls
+*.fdb_latexmk
+*.synctex.gz
+*.blg
+*.bbl
+*.nav
+*.snm
+*.vrb
+
+# Editor and OS-specific files
+*.swp
+*.swo
+*~
+*.bak
+.DS_Store
+Thumbs.db
+
+# Directory for LaTeX package manager
+texmf
+
+cv.pdf
+main.pdf
+cv_template.pdf

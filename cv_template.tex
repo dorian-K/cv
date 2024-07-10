@@ -1,0 +1,43 @@
+\documentclass[11pt,a4paper,sans]{moderncv}
+
+% ModernCV themes
+\moderncvstyle{classic} % Style options: casual, classic, banking, oldstyle, fancy
+\moderncvcolor{blue} % Color options: blue, orange, green, red, purple, grey, black
+\usepackage[utf8]{inputenc}
+\usepackage[scale=0.85]{geometry}
+\usepackage[ngerman,english]{babel} % Language support
+
+% Personal info
+\name{John}{Doe}
+\title{Curriculum Vitae}
+\address{123 Street Name}{City, State 12345}{Country}
+\phone[mobile]{+1~(234)~567~890} % Mobile phone
+\phone[fixed]{+1~(234)~567~890} % Fixed phone
+\email{john.doe@example.com}
+\homepage{www.johndoe.com} % Website
+\social[linkedin]{johndoe} % LinkedIn
+\social[twitter]{@johndoe} % Twitter
+\social[github]{johndoe} % GitHub
+
+% Command to switch language
+\newcommand{\setcvlanguage}[1]{%
+  \ifthenelse{\equal{#1}{english}}{%
+    \selectlanguage{english}
+    \newcommand{\education}{Education}
+    \newcommand{\experience}{Experience}
+    \newcommand{\skills}{Skills}
+    \newcommand{\projects}{Projects}
+    \newcommand{\publications}{Publications}
+    \newcommand{\languages}{Languages}
+    \newcommand{\interests}{Interests}
+  }{%
+    \selectlanguage{ngerman}
+    \newcommand{\education}{Ausbildung}
+    \newcommand{\experience}{Berufserfahrung}
+    \newcommand{\skills}{Fähigkeiten}
+    \newcommand{\projects}{Projekte}
+    \newcommand{\publications}{Veröffentlichungen}
+    \newcommand{\languages}{Sprachen}
+    \newcommand{\interests}{Interessen}
+  }
+}
