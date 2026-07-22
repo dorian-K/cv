@@ -5,6 +5,9 @@ default:
 	pdflatex main
 	cp main.pdf preview.pdf
 
+all:
+	./build.sh
+
 fast:
 	pdflatex main
 	cp main.pdf preview.pdf
