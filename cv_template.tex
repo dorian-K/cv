@@ -7,6 +7,19 @@
 \usepackage[scale=0.85]{geometry}
 \usepackage[ngerman,english]{babel} % Language support
 
+% Same as moderncv's classic \cventry (moderncvbodyi.sty), but everything after
+% the title (institution, city, grade) is set in a smaller font to save space
+\renewcommand*{\cventry}[7][.25em]{%
+  \cvitem[#1]{#2}{%
+    {\bfseries#3}%
+    {\footnotesize%
+    \ifthenelse{\equal{#4}{}}{}{, {\slshape#4}}%
+    \ifthenelse{\equal{#5}{}}{}{, #5}%
+    \ifthenelse{\equal{#6}{}}{}{, #6}}%
+    \strut%
+    \ifx&#7&%
+    \else{\newline{}\begin{minipage}[t]{\linewidth}\small#7\end{minipage}}\fi}}
+
 % Personal info
 \name{Dorian}{Koch}
 \title{Curriculum Vitae}
