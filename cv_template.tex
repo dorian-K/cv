@@ -4,7 +4,7 @@
 \moderncvstyle{classic} % Style options: casual, classic, banking, oldstyle, fancy
 \moderncvcolor{blue} % Color options: blue, orange, green, red, purple, grey, black
 \usepackage[utf8]{inputenc}
-\usepackage[scale=0.85]{geometry}
+\usepackage[scale=0.9]{geometry}
 \usepackage[ngerman,english]{babel} % Language support
 
 % Same as moderncv's classic \cventry (moderncvbodyi.sty), but everything after
@@ -20,13 +20,17 @@
     \ifx&#7&%
     \else{\newline{}\begin{minipage}[t]{\linewidth}\small#7\end{minipage}}\fi}}
 
+% Smaller header: name 34pt -> 28pt, title \LARGE -> \Large
+\renewcommand*{\namefont}{\fontsize{28}{30}\mdseries\upshape}
+\renewcommand*{\titlefont}{\Large\mdseries\slshape}
+
 % Personal info
-\name{Dorian}{Koch}
+\name{Dorian}{Koch\texorpdfstring{\ {\large(he/him)}}{}} % pronouns shown small next to the name, kept out of the PDF metadata
 \title{Curriculum Vitae}
 %\address{123 Street Name}{City, State 12345}{Country}
 %\phone[mobile]{+1~(234)~567~890} % Mobile phone
 %\phone[fixed]{+1~(234)~567~890} % Fixed phone
-%\email{john.doe@example.com}
+\email{dorian.koch@rwth-aachen.de}
 \social[github]{dorian-k} % GitHub
 \homepage{www.dorianko.ch} % Website
 \social[linkedin]{doriankoch} % LinkedIn
@@ -49,7 +53,7 @@
     \newcommand{\publications}{Publications}
     \newcommand{\languages}{Languages}
     \newcommand{\interests}{Interests}
-    \newcommand{\awards}{Honors \& Awards}
+    \newcommand{\awards}{Honors, Awards \& Competitions}
   }{%
     \selectlanguage{ngerman}
     \newcommand{\education}{Ausbildung}
