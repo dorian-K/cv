@@ -25,13 +25,6 @@
     \end{itemize}}
 
 \section{\projects}
-\cventry{2022--2023}{\href{https://github.com/dorian-K/MemScanner}{MemScanner}}{C++, intrinsics (SSE, AVX, AVX2)}{}{}{
-    \begin{itemize}
-        \item Vectorized wildcard pattern search with AVX2: 5.1x faster than scalar implementation (\texttt{std::search}).
-        \item Saturates RAM bandwidth with 3 threads, while the scalar baseline reaches only 70\% using all 8 cores.
-        %\item AVX2 scanner throughput saturates at RAM speed at three threads, naive scalar implementation only reaches 70\%, even when utilizing all eight cores
-        %\item Added CPUID dispatch with scalar fallbacks, a background range cache and randomized CI tests
-    \end{itemize}}
 \cventry{2024--present}{\href{https://rwtf.dorianko.ch}{RWTH University gym occupancy tracker}}{TypeScript, Python, Docker}{\tiny public at \url{https://rwtf.dorianko.ch}}{}{
     \begin{itemize}
         \item Docker stack using Express.js, MariaDB, nginx; running for over 2 years with over 270k data points.
@@ -39,6 +32,13 @@
         %\item Wrote a model-free template-matching OCR; crowdsourced campus WiFi load via a scraper and Android app
         %\item Grew a Jupyter prototype into a Docker stack (Express, MariaDB, Next.js, nginx): \textbf{[N]} years, \textbf{[M]} data points
         \item Implemented Nearest-neighbour forecasting: rescale past days to today's time-series via least squares; compute uncertainty bands from quantiles of the closest $n$ days.
+    \end{itemize}}
+\cventry{2022--2023}{\href{https://github.com/dorian-K/MemScanner}{MemScanner}}{C++, intrinsics (SSE, AVX, AVX2)}{}{}{
+    \begin{itemize}
+        \item Vectorized wildcard pattern search with AVX2: 5.1x faster than scalar implementation (\texttt{std::search}).
+        \item Saturates RAM bandwidth with 3 threads, while the scalar baseline reaches only 70\% using all 8 cores.
+        %\item AVX2 scanner throughput saturates at RAM speed at three threads, naive scalar implementation only reaches 70\%, even when utilizing all eight cores
+        %\item Added CPUID dispatch with scalar fallbacks, a background range cache and randomized CI tests
     \end{itemize}}
 % \cventry{2022}{\href{https://github.com/dorian-K/KellerLighting}{KellerLighting}}{Java, C++ (ESP32)}{}{}{
 %     \begin{itemize}
